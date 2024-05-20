@@ -1,0 +1,19 @@
+# Project metadata
+
+[project]
+dynamic = ["version", "urls"]
+
+name = "my_amaranth_modules"
+description = "Some basic building block modules in amaranth that are usefull in multiple of my projects."
+authors = [{name = "Magnus Östgren"}]
+license = {file = "LICENSE.txt"}
+
+requires-python = "~=3.8"
+dependencies = [
+  "amaranth", # Parts of it will require my https://github.com/green4free/amaranth/tree/ugly_hacks_to_avoid_creating_duplicate_modules fork
+  "amlib"
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
